@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #EEEEEE;
+}
+
+header{
+    background: #343434;
+    width: 100%
+}
+
+header nav{
+    width: fit-content;
+    max-width: 1000px;
+    margin: auto;
+    background: #343434;
+}
+
+.menu_bar{
+    display: none;
+}
+
+header nav ul{
+    overflow: hidden;
+    list-style: none;
+
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul img{
+    float: left;
+    margin-right: 60px; 
+}
+
+header nav ul li a{
+    color: #FFF;
+    padding: 30px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    background: #858585;
+}
+
+section{
+    margin: 20px;
+}
+
+@media screen and (max-width:800px){
+    .class_slider{
+        display: none;
+    }
+
+    header nav{
+        width: 60%; /*Tamaño del despegable*/
+        height: 100%;
+        left: -100%;
+        position: fixed;
+        float: left;
+    }
+
+    header nav ul img{
+        display: none;
+    }
+
+    header nav ul li{
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        border-top: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    .menu_bar{
+        display: block;
+        width: 100%;
+        background: #343434;
+        float: right;
+        margin-bottom: 20px;
+    }
+
+    .menu_bar .btn-menu{
+        display: block;
+        padding-top: 20px; padding-bottom: 40px; padding-left: 20px; padding-right: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .menu_bar span{
+        float: right;
+    }
+
+    .footer .div_one_footer{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 35px 0px;
+    }
+
+    .div_center{
+        width: 90%;
+        height: 100%;
+        margin-left: 20px;
+        margin-top: 70px;
+    }
+
+    .div_group{
+        width: 90%;
+        display: inline-block;
+        text-align: center; /**/
+    }
+
+    .div_bloque{
+        width: 80%;
+        padding: 20px;
+        background: #343434;
+        text-align: center;
+        margin: 20px;
+        display: block;
+    }
+
+    .div_bloque h2{
+        color: white;
+        font-size: 16px;
+    }
+
+    .div_bloque p{
+        color: white;
+        font-size: 16px;
+    }
+
+    a.btn-section{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background: black;
+        margin-top: 20px;
+        padding: 6px 12px;
+        border: 1px solid white;
+        transition: all 0.3s ease;
+        font-size: 12px;
+    }
+
+    a.btn-section:hover{
+        border: 2px solid black;
+        background: white;
+        color: black;
+    }
+
+    .div_contact .div_container{
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        display: grid; /*Acomoda todo al centro*/
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .div_contact .div_contact_info{
+        margin-bottom: 50px;
+    }
+
+    .div_contact_vert iframe{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .footer .div_one_footer .div_col_footer h2{ font-size: 20px} 
+    .footer .div_one_footer .div_one_footer p{ font-size: 16px}
+
+    /*Página Nosotros*/
+
+    .section_nosotros{
+        margin: 0px 20px 20px 20px;
+        padding: 10px;
+    }
+
+    .section_nosotros .nosotros_bloque .nosotros_titulo img{
+        width: 300px
+    }
+
+    .section_nosotros .nosotros_bloque .nosotros_titulo h2{
+        font-size: 20px;
+    }
+
+    .section_nosotros .nosotros_bloque .nosotros_parrafo p{
+        font-size: 16px;
+        margin-left: 10%; margin-right: 10%;
+    }
+
+    .section_nosotros .nosotros_bloque .nosotros_parrafo{
+        margin-bottom: 60px;
+    }
+
+    .section_nosotros .nosotros_bloque .nosotros_parrafo h2{font-size: 16px}
+    .section_nosotros .nosotros_bloque .nosotros_parrafo ol li{font-size: 16px}
+    .section_nosotros .nosotros_bloque .nosotros_parrafo ol{padding-bottom: 0px}
+
+    .nosotros_bloque{padding-top: 20px}
+
+    .section_nosotros .nosotros_bloque .nosotros_parrafo{
+        margin-top: 10px;
+        margin-left: 5%; margin-right: 5%;
+    }
+
+    .nosotros_parrafo .parrafo_atte{margin-top: 0px; margin-bottom: 20px}
+    .nosotros_parrafo .parrafo_atte a p{font-size: 14px}
+    .nosotros_parrafo .parrafo_atte b p{font-size: 12px}
+
+    .nosotros_gerente{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(144, 148, 150, 0.8);
+        display: none; /*aqui: de none a flex */
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        margin: 0;
+        padding: 0;
+    }
+    .nosotros_gerente_bloque .nosotros_gerente_btn_cerrar{position: absolute; right: 8%; top: 6%}
+    .nosotros_gerente_bloque .nosotros_gerente_btn_cerrar img{width: 30px; height: 30px}
+
+    .nosotros_gerente_bloque{
+        width: 70%;
+        background: white;
+        padding: 0;
+        margin: 0;
+        border: 3px solid #520000;
+        border-radius: 25px;
+        position: absolute;
+    }
+
+    .nosotros_gerente_bloque h2{
+        font-size: 16px;
+        position: absolute;
+    }
+
+    .nosotros_gerente_perfil{
+        width: 100%;
+        max-width: 1250px; 
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        border: 1px solid black;
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    .gerente_perfil_col p{text-align: justify; font-size: 12px}
+    .gerente_perfil_col img{width:100px; height: 100px; margin-top: 20px}
+    .gerente_perfil_col{padding: 10px; text-align: center;}
+
+    /*Página Servicios*/
+
+    .servicios_bloque{padding-top: 40px} /*Por alguna razon si no pongo esto aparece un espacio arriba*/
+
+    .servicios_titulo h2{font-size: 20px}
+    .servicios_titulo p{font-size: 16px}
+
+    .section_servicios{
+        text-align: center;
+    }
+
+    .servicios_titulo{
+        margin-left: 20px; margin-right: 20px;
+    }
+
+    .servicios_container_one{
+        width: 80%;
+        max-width: 1250px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .servicios_container_two{
+        width: 80%;
+        max-width: 1250px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .servicios_bloque .servicios_container_one .servicios_container_col{width: 350px; align-content: center}
+    .servicios_bloque .servicios_container_two .servicios_container_col{width: 350px}
+
+    /*==============================================*/
+
+    #w_servicio_geologica h2{font-size: 16px}
+    #w_servicio_geologica ul li{font-size: 12px}
+    #w_servicio_geologica .servicios_ingenieria_img{text-align: center; margin-top: 20px; margin-bottom: 30px}
+    #w_servicio_geologica .servicios_ingenieria_img img{width: 180px; height:160px}
+
+    #w_servicio_geologica .servicios_ingenieria_bloque{
+        background: white;
+        padding: 5%;
+        border: 3px solid #520000;
+        border-radius: 25px;
+        margin: 15% 15% 0% 15%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #w_servicio_geologica .servicios_ingenieria_texto{text-align: left}
+
+    #w_servicio_geologica .servicios_ingenieria_marca{
+        position: absolute;
+        top: 85%; left: 20%;
+        font-size: 12px;
+    }
+
+    #w_servicio_geologica .servicios_ingenieria_btn{
+        position: absolute; top: 20%; left: 70%
+    }
+
+    /*==============================================*/
+
+    #w_servicio_minas h2{font-size: 16px}
+    #w_servicio_minas ul li{font-size: 12px}
+    #w_servicio_minas .servicios_ingenieria_img{text-align: center; margin-top: 20px; margin-bottom: 30px}
+    #w_servicio_minas .servicios_ingenieria_img img{width: 180px; height:160px}
+
+
+    #w_servicio_minas .servicios_ingenieria_bloque{
+        background: white;
+        padding: 5%;
+        border: 3px solid #520000;
+        border-radius: 25px;
+        margin: 8% 10% 0% 10%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #w_servicio_minas .servicios_ingenieria_texto{text-align: left}
+
+    #w_servicio_minas .servicios_ingenieria_marca{
+        position: absolute;
+        top: 87%; left: 16%;
+        font-size: 12px;
+    }
+
+    #w_servicio_minas .servicios_ingenieria_btn{
+        position: absolute; top: 8%; left: 77%
+    }
+
+    /*==============================================*/
+
+    #w_servicio_geotec h2{font-size: 16px}
+    #w_servicio_geotec ul li{font-size: 12px}
+
+    #w_servicio_geotec .servicios_ingenieria_img{
+        text-align: center; 
+        margin-top: 20px; 
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #w_servicio_geotec .servicios_ingenieria_img img{width: 145px; height:160px}
+
+    #w_servicio_geotec .servicios_ingenieria_bloque{
+        background: white;
+        padding: 5%;
+        border: 3px solid #520000;
+        border-radius: 25px;
+        margin: 9% 10% 0% 10%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }    
+
+    #w_servicio_geotec .servicios_ingenieria_texto{text-align: left}
+
+    #w_servicio_geotec .servicios_ingenieria_marca{
+        position: absolute;
+        top: 88%; left: 14%;
+        font-size: 12px;
+    }
+
+    #w_servicio_geotec .servicios_ingenieria_btn{
+        position: absolute; top: 10%; left: 78%
+    }
+
+    /*==============================================*/
+
+    #w_servicio_ambiental h2{font-size: 16px}
+    #w_servicio_ambiental ul li{font-size: 12px}
+    #w_servicio_ambiental .servicios_ingenieria_img{text-align: center; margin-top: 20px; margin-bottom: 30px}
+    #w_servicio_ambiental .servicios_ingenieria_img img{width: 180px; height:160px}
+
+    #w_servicio_ambiental .servicios_ingenieria_bloque{
+        background: white;
+        padding: 5%;
+        border: 3px solid #520000;
+        border-radius: 25px;
+        margin: 7% 15% 0% 15%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #w_servicio_ambiental .servicios_ingenieria_texto{text-align: left}
+
+    #w_servicio_ambiental .servicios_ingenieria_marca{
+        position: absolute;
+        top: 88%; left: 20%;
+        font-size: 12px;
+    }
+
+    #w_servicio_ambiental .servicios_ingenieria_btn{
+        position: absolute; top: 7%; left: 73%
+    }
+
+    /*==============================================*/
+
+    #w_servicio_civil h2{font-size: 16px}
+    #w_servicio_civil ul li{font-size: 12px}
+
+    #w_servicio_civil .servicios_ingenieria_img{
+        text-align: center; 
+        margin-top: 20px; 
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #w_servicio_civil .servicios_ingenieria_img img{width: 155px; height:70px}
+
+    #w_servicio_civil .servicios_ingenieria_bloque{
+        background: white;
+        padding: 5%;
+        border: 3px solid #520000;
+        border-radius: 25px;
+        margin: 7% 6% 0% 6%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #w_servicio_civil .servicios_ingenieria_texto{text-align: left}
+
+    #w_servicio_civil .servicios_ingenieria_marca{
+        position: absolute;
+        top: 88%; left: 12%;
+        font-size: 12px;
+    }
+
+    #w_servicio_civil .servicios_ingenieria_btn{
+        position: absolute; top: 7%; left: 82%
+    }
+
+    /*Página Proyectos*/
+
+    .proyectos_panel{
+        background: white;
+        width: 100%;
+        padding: 2%;
+        border: 2px solid #9F0000;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .proyectos_panel .proyectos_panel_img{
+        width: 100%;
+        height: 180px;
+    }
+
+    .proyectos_panel .proyectos_panel_img h2{
+        font-size: 18px
+    }
+
+    .proyectos_panel .proyectos_panel_desc{
+        text-align: left;
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    /*Página Clientes*/
+    
+    .clientes_bloque{padding-top: 60px}
+
+    .clientes_column{
+        margin: 40px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*Página Dirección*/
+
+    .direccion_titulo h2{font-size: 20px}
+    .direccion_titulo p{font-size: 16px}
+
+    .direccion_bloque{padding-top: 40px}
+
+    .direccion_bloque_horizontal{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .direccion_map iframe{width: 100%; height: 300px}
+    .direccion_map_desc h2{font-size: 16px}
+
+    /*Página Contacto*/
+
+    .contacto_bloque{
+        text-align: center; 
+        padding-bottom: 20px;
+        padding-top: 60px
+    }
+
+    .contacto_contacto{
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 96%;
+        height: 50vh;
+    }
+
+    .contacto_contacto_texto{margin-top: 110px}
+
+    .contacto_contacto_texto h2{
+        width: 99%;
+        font-size: 14px; 
+        background-color: rgba(0, 0, 0, 0.4);
+        border: 2px transparent solid;
+    }
+
+    .contacto_contacto_texto p{font-size: 12px}
+
+
+}

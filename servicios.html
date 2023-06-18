@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+        <title>P&E | Servicios</title>
+        <link rel="shortcut icon" href="img/PyE-Logo.png" type="image/x-icon">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/fuentes.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="menu_bar">
+                <a href="#" class="btn-menu"><span class="icon-menu"/> Menú</a>
+            </div>
+            <nav>
+                <ul>
+                    <a href="index.html"><img src="img/Logotipo.png" width="180px" height="80px"></a>
+                    <li><a href="nosotros.html"><span class="icon-office"/> Nosotros</a></li>
+                    <li><a href="servicios.html"><span class="icon-hammer"/> Servicios</a></li>
+                    <li><a href="proyectos.html"><span class="icon-book"/> Proyectos</a></li>
+                    <li><a href="clientes.html"><span class="icon-users"/> Clientes</a></li>
+                    <li><a href="direccion.html"><span class="icon-location2"/> Dirección</a></li>
+                    <li><a href="contacto.html"><span class="icon-phone"/> Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section_servicios">
+            <div class="servicios_bloque">
+                <div class="servicios_titulo">
+                    <h2>SERVICIOS</h2><br>
+                    <p>Dominamos las 5 ramas de la ingenieria en construcción</p>
+                </div>
+                <div class="servicios_container_one">
+                    <div class="servicios_container_col">
+                        <div class="container_col_text">
+                            <img src="img/service/ing-geologica.jpg" width="300px" height="180px"><br><br>
+                            <b><p>INGENIERÍA GEOLÓGICA</p></b>
+                        </div>
+                        <div class="container_col_btn"><a href="javascript:abrir_wservicio_geologica()" class="btn-service"><b>Ver más</b></a></div>
+                    </div>
+                    <div class="servicios_container_col">
+                        <div class="container_col_text">
+                            <img src="img/service/ing-minas.jpg" width="300px" height="180px"><br><br>
+                            <b><p>INGENIERÍA DE MINAS</p></b>
+                        </div>
+                        <div class="container_col_btn"><a href="javascript:abrir_wservicio_minas()" class="btn-service"><b>Ver más</b></a></div>
+                    </div>
+                    <div class="servicios_container_col">
+                        <div class="container_col_text">
+                            <img src="img/service/ing-geotecnica.jpg" width="300px" height="180px"><br><br>
+                            <b><p>INGENIERÍA GEOTÉCNICA</p></b>
+                        </div>
+                        <div class="container_col_btn"><a href="javascript:abrir_wservicio_geotec()" class="btn-service"><b>Ver más</b></a></div>
+                    </div>
+                </div>
+                <div class="servicios_container_two">
+                    <div class="servicios_container_col">
+                        <div class="container_col_text">
+                            <img src="img/service/ing-ambiental.jpg" width="300px" height="180px"><br><br>
+                            <b><p>INGENIERÍA AMBIENTAL</p></b>
+                        </div>
+                        <div class="container_col_btn"><a href="javascript:abrir_wservicio_ambiental()" class="btn-service"><b>Ver más</b></a></div>
+                    </div>
+                    <div class="servicios_container_col">
+                        <div class="container_col_text">
+                            <img src="img/service/ing-civil.jpg" width="300px" height="180px"><br><br>
+                            <b><p>INGENIERÍA CIVIL Y ESTRUCTURAL</p></b>
+                        </div>
+                        <div class="container_col_btn"><a href="javascript:abrir_wservicio_civil()" class="btn-service"><b>Ver más</b></a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="w_servicio_geologica" class="servicios_ingenieria">
+                <div class="servicios_ingenieria_bloque">
+                    <div class="servicios_ingenieria_btn">
+                        <a href="javascript:cerrar_wservicio_geologica()"><img src="ico/cerrar.png" width="45px" height="45px"></a>
+                    </div>
+                    <div class="servicios_ingenieria_texto">
+                        <h2>INGENIERÍA GEOLÓGICA</h2><br><br>
+                        <div>
+                            <ul>
+                                <li>Exploración de mineral in situ</li>
+                                <li>Geoquímica de exploración</li>
+                                <li>Analisis estructural de campo</li>
+                                <li>Muestreo, analisis QA/QC en exploración y explotación de minas</li>
+                                <li>Capacitación en seguridad en exploraciones</li>
+                                <li>Auditoria y evaluación de proyectos en exploración y explotación de minas</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="servicios_ingenieria_img">
+                        <img src="img/service/w-ing-geo.jpg" width="350px" height="300px">
+                    </div>
+                    <div class="servicios_ingenieria_marca">
+                        <p>P&#38;E Constructores S.A.C.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="w_servicio_minas" class="servicios_ingenieria">
+                <div class="servicios_ingenieria_bloque">
+                    <div class="servicios_ingenieria_btn">
+                        <a href="javascript:cerrar_wservicio_minas()"><img src="ico/cerrar.png" width="45px" height="45px"></a>
+                    </div>
+                    <div class="servicios_ingenieria_texto">
+                        <h2>INGENIERÍA DE MINAS</h2><br><br>
+                        <div>
+                            <ul>
+                                <li>Revisión, formulación y evaluación de proyectos mineros</li>
+                                <li>Elaboración de expedientes técnicos para inicio y reinicio de operaciones mineras</li>
+                                <li>Diseño y planificación de métodos de minado</li>
+                                <li>Estudios de ventilación de minas</li>
+                                <li>Elaboración del plan de minado anual</li>
+                                <li>Elaboración del plan y programa de SSOMAC</li>
+                                <li>Topografía minera</li>
+                                <li>Elaboración de expedientes para solicitud de explosivos para mineria</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="servicios_ingenieria_img">
+                        <img src="img/service/w-ing-minas.jpg" width="350px" height="300px">
+                    </div>
+                    <div class="servicios_ingenieria_marca">
+                        <p>P&#38;E Constructores S.A.C.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="w_servicio_geotec" class="servicios_ingenieria">
+                <div class="servicios_ingenieria_bloque">
+                    <div class="servicios_ingenieria_btn">
+                        <a href="javascript:cerrar_wservicio_geotec()"><img src="ico/cerrar.png" width="45px" height="45px"></a>
+                    </div>
+                    <div class="servicios_ingenieria_texto">
+                        <h2>INGENIERÍA DE GEOTÉCNICA</h2><br><br>
+                        <div>
+                            <ul>
+                                <li>Elaboración de GCMP (Ground Control Management Plan)</li>
+                                <li>Mapeo y logueo geomecánico</li>
+                                <li>Monitoreo de daños por voladura, sísmica, deformación de pilares costilla, corona</li>
+                                <li>Laboratorio de mecánica de rocas y suelos.</li>
+                                <li>Estudios geomecánicos de método de explotación, relleno de mina, sostenimiento, evaluación In rush, evaluación de peligro sísmico, subsidencia, hundimiento, modelamiento numérico, etc.</li>
+                                <li>Cursos de capacitación y entrenamiento geomecánica en fortificación, monitoreo e instrumentación y control de calidad de los sistemas de sostenimiento</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="servicios_ingenieria_img">
+                        <img src="img/service/w-ing-geotec.jpg" width="250px" height="200px">
+                        <img src="img/service/w-ing-geotec2.jpg" width="250px" height="200px">
+                    </div>
+                    <div class="servicios_ingenieria_marca">
+                        <p>P&#38;E Constructores S.A.C.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="w_servicio_ambiental" class="servicios_ingenieria">
+                <div class="servicios_ingenieria_bloque">
+                    <div class="servicios_ingenieria_btn">
+                        <a href="javascript:cerrar_wservicio_ambiental()"><img src="ico/cerrar.png" width="45px" height="45px"></a>
+                    </div>
+                    <div class="servicios_ingenieria_texto">
+                        <h2>INGENIERÍA AMBIENTAL</h2><br><br>
+                        <div>
+                            <ul>
+                                <li>Estudios de instrumentos de gestion ambiental IGAFOM, DIA, EIA</li>
+                                <li>Plan de cierre de minas</li>
+                                <li>Monitoreos ambientales: de aire, agua, suelos, ruido</li>
+                                <li>Elaboración de solicitud de calificación PPM-PMA</li>
+                                <li>Auditorias en gestión ambiental ISO 14001</li>
+                                <li>Elaboración de objetivos y metas en gestión ambiental</li>
+                                <li>Servicio de saneamiento ambiental</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="servicios_ingenieria_img">
+                        <img src="img/service/w-ing-amb.jpg" width="350px" height="350px">
+                    </div>
+                    <div class="servicios_ingenieria_marca">
+                        <p>P&#38;E Constructores S.A.C.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="w_servicio_civil" class="servicios_ingenieria">
+                <div class="servicios_ingenieria_bloque">
+                    <div class="servicios_ingenieria_btn">
+                        <a href="javascript:cerrar_wservicio_civil()"><img src="ico/cerrar.png" width="45px" height="45px"></a>
+                    </div>
+                    <div class="servicios_ingenieria_texto">
+                        <h2>INGENIERÍA CIVIL Y ESTRUCTURAL</h2><br><br>
+                        <div>
+                            <ul>
+                                <li>Elaboración de expedientes técnicos para obras publicas y privadas</li>
+                                <li>Elaboración de planos</li>
+                                <li>Tramite de licencia de construcción</li>
+                                <li>Tramite licencia de funcionamiento municipal</li>
+                                <li>Supervisión de obras civiles</li>
+                                <li>Ejecución de obras como: Carreteras, Canales, Puentes, Edificaciones</li>
+                                <li>Topografía</li>
+                                <li>Instalaciones sanitarias</li>
+                                <li>Instalaciones eléctricas</li>
+                                <li>Acabado de interiores y exteriores</li>
+                                <li>Servicio de saneamiento ambiental</li>
+                                <li>Venta de materiales, herramientas y equipos para construcción</li>
+                                <li>Venta de extintores y equipos contra incendios</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="servicios_ingenieria_img">
+                        <img src="img/service/w-ing-civil.jpg" width="350px" height="180px">
+                        <img src="img/service/w-ing-civil2.jpg" width="350px" height="230px">
+                    </div>
+                    <div class="servicios_ingenieria_marca">
+                        <p>P&#38;E Constructores S.A.C.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="div_one_footer">
+                <div class="div_col_footer">
+                    <figure>
+                        <a href="index.html"><img src="img/Logotipo2.png" alt="Logotipo"/></a>
+                    </figure>
+                </div>
+                <div class="div_col_footer">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>El equipo humano de P&E Constructores se compone de profesionales con una gran capacidad 
+                        de dedicación al cumplimiento de los requisitos exigidos por nuestros clientes ofreciendo
+                        la máxima transparencia y satisfacción de ver superadas sus expectativas
+                        en cada una de sus obras, porque para P&E Constructores cada obra es única.</p>
+                </div>
+                <div class="div_col_footer">
+                    <h2>SIGUENOS</h2>
+                    <div class="div_col_social_footer">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="div_two_footer">
+                <small style="font-size: 15px">&copy; 2023 <b>P&E Constructores S.A.C.</b> - Todos los Derechos Reservados</small><br>
+            </div>
+        </footer>
+
+        <!--Sección JavaScript-->
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script src="css/ar/swiper-bundle.min.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+        
+        <!--JavaScript-->
+        <script>function abrir_wservicio_geologica(){document.getElementById("w_servicio_geologica").style.display = "block";}</script>
+        <script>function cerrar_wservicio_geologica(){document.getElementById("w_servicio_geologica").style.display = "none";}</script>
+        
+        <script>function abrir_wservicio_minas(){document.getElementById("w_servicio_minas").style.display = "block";}</script>
+        <script>function cerrar_wservicio_minas(){document.getElementById("w_servicio_minas").style.display = "none";}</script>
+        
+        <script>function abrir_wservicio_geotec(){document.getElementById("w_servicio_geotec").style.display = "block";}</script>
+        <script>function cerrar_wservicio_geotec(){document.getElementById("w_servicio_geotec").style.display = "none";}</script>        
+
+        <script>function abrir_wservicio_ambiental(){document.getElementById("w_servicio_ambiental").style.display = "block";}</script>
+        <script>function cerrar_wservicio_ambiental(){document.getElementById("w_servicio_ambiental").style.display = "none";}</script>
+        
+        <script>function abrir_wservicio_civil(){document.getElementById("w_servicio_civil").style.display = "block";}</script>
+        <script>function cerrar_wservicio_civil(){document.getElementById("w_servicio_civil").style.display = "none";}</script>
+        
+    </body>
+</html>
+
